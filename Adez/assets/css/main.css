@@ -176,6 +176,11 @@ h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
 }
+#inicio{
+  font-size: 40px;
+  width: 690px;
+  margin-left: 10px;
+}
 .header {
   --background-color: rgba(0, 0, 0, 0.8);
   --heading-color: #ffffff;
@@ -421,11 +426,13 @@ h6 {
 #texto-sobre{
   text-align: center;
   justify-content: center;
-  font-size: 30px;
+  font-size: 25px;
   font-family: "Poppins";
   font-weight: 400;
+  width: 100%;
   margin-top: 20px;
 }
+
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
     color: var(--nav-color);
