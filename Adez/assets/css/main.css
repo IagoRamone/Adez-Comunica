@@ -303,7 +303,7 @@ h6 {
 }
 @media (min-width: 1050px) {
   video{
-    width: 450px;
+    width: 520px;
   }
   
 }
@@ -1242,6 +1242,11 @@ section,
   }
   .btn-call{
     margin-right: 320px;
+  }
+  #map{
+    width: 500px;
+    height: 250px;
+    margin-top: 40px;
   }
 
 }
