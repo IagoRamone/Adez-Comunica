@@ -970,6 +970,9 @@ section,
     height: 250px;
     margin-top: 20px;
   }
+  video{
+    width: 700px;
+  }
   .btn-call,
   .btn-call:focus {
     width: 800px;
@@ -1017,6 +1020,9 @@ section,
     height: 250px;
     margin-top:20px ;
   }
+  video{
+    width: 680px;
+  }
   .btn-call,
     .btn-call:focus {
       width: 800px;
@@ -1062,6 +1068,12 @@ section,
   
 
 @media ((min-width:600px) and (max-width: 768px)) {
+  #inicio{
+    width: 480px;
+  }
+  video{
+    width: 520px;
+  }
   .btn-call,
     .btn-call:focus {
       width: 400px;
@@ -1118,6 +1130,9 @@ section,
 }
 
 @media ((min-width:500px) and (max-width: 600px)){
+  #inicio{
+    width: 450px;
+  }
   .btn-call,
     .btn-call:focus {
       width: 400px;
@@ -1166,8 +1181,11 @@ section,
 }
 
 @media ((min-width:400px) and (max-width: 500px)){
+  #inicio{
+    width: 390px;
+  }
   video{
-    width: 380px;
+    width: 400px;
   }
   .btn-call,
     .btn-call:focus {
@@ -1216,8 +1234,11 @@ section,
 }
 
 @media ((min-width:300px) and (max-width: 400px)){
-  video{
+  #inicio{
     width: 300px;
+  }
+  video{
+    width: 320px;
   }
   .btn-call{
     margin-right: 320px;
