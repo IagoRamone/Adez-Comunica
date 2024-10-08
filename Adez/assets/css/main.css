@@ -176,6 +176,11 @@ h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
 }
+#inicio{
+  font-size: 40px;
+  width: 690px;
+  margin-left: 10px;
+}
 .header {
   --background-color: rgba(0, 0, 0, 0.8);
   --heading-color: #ffffff;
@@ -298,7 +303,7 @@ h6 {
 }
 @media (min-width: 1050px) {
   video{
-    width: 450px;
+    width: 520px;
   }
   
 }
@@ -421,11 +426,13 @@ h6 {
 #texto-sobre{
   text-align: center;
   justify-content: center;
-  font-size: 30px;
+  font-size: 25px;
   font-family: "Poppins";
   font-weight: 400;
+  width: 100%;
   margin-top: 20px;
 }
+
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
     color: var(--nav-color);
@@ -963,6 +970,9 @@ section,
     height: 250px;
     margin-top: 20px;
   }
+  video{
+    width: 700px;
+  }
   .btn-call,
   .btn-call:focus {
     width: 800px;
@@ -1010,6 +1020,9 @@ section,
     height: 250px;
     margin-top:20px ;
   }
+  video{
+    width: 680px;
+  }
   .btn-call,
     .btn-call:focus {
       width: 800px;
@@ -1055,6 +1068,12 @@ section,
   
 
 @media ((min-width:600px) and (max-width: 768px)) {
+  #inicio{
+    width: 480px;
+  }
+  video{
+    width: 520px;
+  }
   .btn-call,
     .btn-call:focus {
       width: 400px;
@@ -1111,6 +1130,9 @@ section,
 }
 
 @media ((min-width:500px) and (max-width: 600px)){
+  #inicio{
+    width: 450px;
+  }
   .btn-call,
     .btn-call:focus {
       width: 400px;
@@ -1159,8 +1181,11 @@ section,
 }
 
 @media ((min-width:400px) and (max-width: 500px)){
+  #inicio{
+    width: 390px;
+  }
   video{
-    width: 380px;
+    width: 400px;
   }
   .btn-call,
     .btn-call:focus {
@@ -1209,11 +1234,19 @@ section,
 }
 
 @media ((min-width:300px) and (max-width: 400px)){
-  video{
+  #inicio{
     width: 300px;
+  }
+  video{
+    width: 320px;
   }
   .btn-call{
     margin-right: 320px;
+  }
+  #map{
+    width: 500px;
+    height: 250px;
+    margin-top: 40px;
   }
 
 }
