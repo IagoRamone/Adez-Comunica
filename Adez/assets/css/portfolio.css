@@ -46,6 +46,7 @@ body.dark-mode p {
 :root {
   scroll-behavior: smooth;
 }
+
  /* Reset básico de margens e preenchimento */
  * {
   margin: 0;
@@ -216,6 +217,7 @@ section {
 }
 #projetos h2 {
   color: white;
+  font-size: 20px;
 }
 
 .projetos-grid {
