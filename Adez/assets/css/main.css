@@ -820,6 +820,47 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 50%);
   position: relative;
 }
+/*Section-about*/
+.about {
+  position: relative;
+  overflow: hidden; 
+  min-height: 100vh;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1; 
+}
+
+.background-video {
+  min-width: 100%;
+  min-height: 100%; 
+  object-fit: cover; 
+}
+
+.about .container {
+  position: relative; 
+  z-index: 1; 
+}
+
+/* Efeito de desfoque */
+.video-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5); 
+  backdrop-filter: blur(5px); 
+  z-index: 1; /
+}
+
 
 /*Cookies*/
 #cookie-banner {
