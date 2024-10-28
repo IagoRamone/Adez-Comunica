@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contato</title>
+  <title>Trabalhe Conosco</title>
   <meta content="Página de apresentação de serviços e formulário" name="description">
   <link rel="stylesheet" href="../css/trabalheconosco.css">
   <link href="../img/Foguete amarelo.png" rel="icon">
@@ -63,9 +63,10 @@
         </div>
       </header>
     <main>
+        <div class="principal">
             <h1>Trabalhe Conosco</h1>
             <p>Faça parte da nossa equipe e ajude a construir um futuro melhor!</p>
-
+        </div>    
         <section id="formulario">
             <h2>Envie seu currículo</h2>
             <form action="/submit" method="POST">
@@ -82,7 +83,11 @@
                     <option value="design">Designer UX/UI</option>
                     <option value="gestao">Social Media</option>
                 </select>
+                
+                <label for="curriculo">Anexe seu Currículo (PDF, máx 2MB):</label>
+                <input type="file" id="curriculo" name="curriculo" accept=".pdf" required>
     
+
                 <label for="mensagem">Mensagem:</label>
                 <textarea id="mensagem" name="mensagem" rows="4" placeholder="Fale um pouco sobre você..."></textarea>
     
