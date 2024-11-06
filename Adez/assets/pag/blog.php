@@ -90,6 +90,13 @@
       </div>
     <main>
         <section class="noticias">
+        <a class="artigo" href="./rappi.php">
+            <article>
+              <h2>“Como se cadastrar no Rappi</h2>
+              <p><strong>Data:</strong> 29 de outubro de 2024</p>
+              <p> O <strong>Rappi</strong>, atualmente o segundo maior aplicativo de delivery no Brasil, se consolidou como uma das principais opções para plataformas de entrega. Fundado na Colômbia em 2015, ele surgiu com a proposta inovadora de entregar 'qualquer coisa', o que impulsionou sua rápida expansão pela América Latina.
+              Hoje, o Rappi conta com mais de quatrocentos mil entregadores espalhados pelo Brasil, sendo uma ferramenta muito útil na expansão de Bares e Restaurantes ao serviço delivery. </p>
+          </article></a>
           <a class="artigo" href="/assets/pag/dadoenovobacon.php">
             <article>
               <h2>“O Dado é o novo Bacon!”: Tudo o que vimos no RIW 2024</h2>
@@ -123,7 +130,8 @@
         <aside class="sidebar">
             <h3>Escolha do editor</h3>
             <ul class="link-list">
-              <li><a href="/assets/pag/dadoenovobacon.php"> “O Dado é o novo Bacon!”: Tudo o que vimos no RIW 2024</a></li>
+                <li><a href="/assets/pag/rappi.php">Como se cadastrar no Rappi</a></li>
+                <li><a href="/assets/pag/dadoenovobacon.php"> “O Dado é o novo Bacon!”: Tudo o que vimos no RIW 2024</a></li>
                 <li><a href="/assets/pag/noticia.php">Cadastro iFood: saiba como se inscrever na plataforma de delivery</a></li>
                 <li><a href="/assets/pag/noticiainnovation.php">Rio Innovation Week espera 150 mil pessoas</a></li>
                 <li><a href="/assets/pag/noticiafoodservice.php">Marketing e Food Service: Como o Setor reagiu ao maior movimento digital dos consumidores</a></li>
