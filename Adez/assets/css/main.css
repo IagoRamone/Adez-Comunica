@@ -422,11 +422,15 @@ h6 {
   }
   
 }
-
+.texto{
+  color: white;
+  text-align: center;
+}
 #texto-sobre{
+  color: white;
   text-align: center;
   justify-content: center;
-  font-size: 25px;
+  font-size: 22px;
   font-family: "Poppins";
   font-weight: 400;
   width: 100%;
@@ -1355,9 +1359,16 @@ section,
   font-size: 1.75rem;
   font-weight: 700;
 }
-
+.li-sobre{
+  color: white;
+}
 .about .content .fst-italic {
-  color: color-mix(in srgb, var(--default-color), var(--contrast-color) 50%);
+  color: white;
+  text-align: center;
+  align-items: center;
+  font-size: 22px;
+  font-family: "Poppins";
+  font-weight: 400;
 }
 
 .about .content ul {
