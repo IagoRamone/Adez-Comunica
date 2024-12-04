@@ -423,11 +423,22 @@ h6 {
   
 }
 .texto{
-  color: white;
+  color: #fdd028;
   text-align: center;
 }
+.text-juntos{
+  color: #fdd028;
+  font-size: 22px;
+  font-family: "Poppins";
+  font-weight: 400;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
 #texto-sobre{
   color: white;
+  align-items: center;
   text-align: center;
   justify-content: center;
   font-size: 22px;
@@ -1364,8 +1375,10 @@ section,
 }
 .about .content .fst-italic {
   color: white;
+  width: 100%;
   text-align: center;
   align-items: center;
+  margin-right:50px ;
   font-size: 22px;
   font-family: "Poppins";
   font-weight: 400;
@@ -1770,32 +1783,36 @@ section,
   background-color: #0056b3;
 }
 /* Container dos cards */
+
 .cardp-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 50px; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; 
   padding: 15px;
-  margin-left: auto;
-  margin-right: auto; 
-  max-width: 800px; 
+  margin: 0 auto;
+  max-width: 1200px; 
 }
 
-/* Estilos dos cards */
 .cardp {
   border-radius: 10px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 10px; 
   overflow: hidden;
+  width: 150px; 
 }
 
+/* Estilos das imagens */
 .cardp img {
-  max-width: 100%; 
-  height: auto; 
+  max-width: 100%;
+  height: auto;
   border-radius: 5px;
 }
+
+
 /* Responsividade para telas menores que 1024px */
 @media (max-width: 1024px) {
   .cardp-container {

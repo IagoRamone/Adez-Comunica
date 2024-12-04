@@ -146,7 +146,7 @@
       <div class="col-lg-6">
         <p id="texto-sobre">
           Somos orgulhosos de encantar não apenas nossos clientes, mas também nossa equipe de colaboradores e parceiros. <br>
-          <strong>Juntos voamos cada vez mais alto.</strong>
+          <p class="text-juntos"><strong>Juntos voamos cada vez mais alto.</strong></p>
         </p>
       </div>
     </div>
@@ -332,7 +332,7 @@
             <img src="./assets/img/parceiros/google.png" id="cardp-google" alt="Parceiros-google">
           </div>
           <div class="cardp">
-            <img src="./assets/img/parceiros/meta.png" alt="Parceiros-meta">
+            <img src="./assets/img/parceiros/meta.png" id="cardp-etus" alt="Parceiros-meta">
           </div>
           <div class="cardp">
             <img src="./assets/img/parceiros/Etus.png" alt="Parceiros-Etus">
@@ -408,7 +408,7 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZQLT2P"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-   <!-- Exemplo de Modal -->
+
 
 <!-- Cookies -->
 <div id="termoModal" class="modal">
@@ -446,8 +446,7 @@
   function eraseCookie(name) {
     document.cookie = name + '=; Max-Age=-99999999;';
   }
-  
-  // Mostrar modal se o cookie não estiver presente
+
   window.onload = function() {
     if (!getCookie('aceitouTermo')) {
       document.getElementById('termoModal').style.display = 'block';
