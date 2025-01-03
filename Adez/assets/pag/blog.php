@@ -90,9 +90,15 @@
       </div>
     <main>
         <section class="noticias">
+        <a class="artigo" href="./geracaoz.php">
+            <article>
+              <h2>“Como a Geração Z Está Mudando o Jogo do Marketing: Macetes e Estratégias</h2>
+              <p><strong>Data:</strong> 03 de Janeiro de 2025</p>
+              <p>“Me responda uma coisa: Como funcionaria sua vida sem redes sociais?” Numa entrevista a um grupo de pessoas multigeracionais com essa pergunta, esperaria-se que a pessoa de maior idade dissesse que vive muito bem sem sua dose diária de vídeos rápidos. Por outro lado, os mais novos tremeriam só de imaginar essa possibilidade.. </p>
+          </article></a>
         <a class="artigo" href="./rappi.php">
             <article>
-              <h2>“Como se cadastrar no Rappi</h2>
+              <h2>“Como se cadastrar no Rappi"</h2>
               <p><strong>Data:</strong> 29 de outubro de 2024</p>
               <p> O <strong>Rappi</strong>, atualmente o segundo maior aplicativo de delivery no Brasil, se consolidou como uma das principais opções para plataformas de entrega. Fundado na Colômbia em 2015, ele surgiu com a proposta inovadora de entregar 'qualquer coisa', o que impulsionou sua rápida expansão pela América Latina.
               Hoje, o Rappi conta com mais de quatrocentos mil entregadores espalhados pelo Brasil, sendo uma ferramenta muito útil na expansão de Bares e Restaurantes ao serviço delivery. </p>
