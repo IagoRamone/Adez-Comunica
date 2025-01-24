@@ -88,7 +88,7 @@ session_start();
                     <h1> “Como a Geração Z Está Mudando o Jogo do Marketing: Macetes e Estratégias</h1>
                     <p class="meta">Brendon Esteves - 03/01/2025</p>
                 </header>
-                <img src="" alt="">
+                <img src="../img/geracaoz.jpg" alt="">
                 <br><br>
                 <p>
                   “Me responda uma coisa: Como funcionaria sua vida sem redes sociais?” Numa entrevista a um grupo de pessoas multigeracionais com essa pergunta, esperaria-se que a pessoa de maior idade dissesse que vive muito bem sem sua dose diária de vídeos rápidos. Por outro lado, os mais novos tremeriam só de imaginar essa possibilidade..
@@ -97,7 +97,6 @@ session_start();
                 <p>
                   Muito ouvimos ultimamente sobre o distanciamento das gerações que hoje compõem a nossa sociedade. Tantas são as nomenclaturas - e se você respondeu como a primeira pessoa à pergunta no início, você é um Millennial - com características únicas e formas distintas de se relacionarem e verem o mundo.
                 </p>
-                <img class="palestra" src="../img/geracaoz.jpeg" alt="palestra">
                 <h2>Mais de 20% da população brasileira se enquadra na Geração Z</h2>
                 <br>
                 <p>
