@@ -90,11 +90,18 @@
       </div>
     <main>
         <section class="noticias">
+        <a class="artigo" href="./olivetto.php">
+            <article>
+              <h2>A Propaganda brasileira ainda é a melhor do mundo?</h2>
+              <p><strong>Data:</strong> 29 de Janeiro de 2025</p>
+              <p>Há um tempo atrás, quando estávamos assistindo a um vídeo no YouTube ou um filme no streaming, era ótimo não ser interrompido por propagandas. Desse tempo para cá, isso não só mudou, mas se intensificou tanto que assistir a um comercial se tornou algo errado, sem fundamento.
+              </p>
+          </article></a>
         <a class="artigo" href="./geracaoz.php">
             <article>
-              <h2>“Como a Geração Z Está Mudando o Jogo do Marketing: Macetes e Estratégias</h2>
+              <h2>“Como a Geração Z Está Mudando o Jogo do Marketing: Macetes e Estratégias"</h2>
               <p><strong>Data:</strong> 03 de Janeiro de 2025</p>
-              <p>“Me responda uma coisa: Como funcionaria sua vida sem redes sociais?” Numa entrevista a um grupo de pessoas multigeracionais com essa pergunta, esperaria-se que a pessoa de maior idade dissesse que vive muito bem sem sua dose diária de vídeos rápidos. Por outro lado, os mais novos tremeriam só de imaginar essa possibilidade.. </p>
+              <p>“Me responda uma coisa: Como funcionaria sua vida sem redes sociais?” Numa entrevista a um grupo de pessoas multigeracionais com essa pergunta, esperaria-se que a pessoa de maior idade dissesse que vive muito bem sem sua dose diária de vídeos rápidos. Por outro lado, os mais novos tremeriam só de imaginar essa possibilidade.." </p>
           </article></a>
         <a class="artigo" href="./rappi.php">
             <article>
@@ -136,6 +143,7 @@
         <aside class="sidebar">
             <h3>Escolha do editor</h3>
             <ul class="link-list">
+                <li><a href="/assets/pag/olivetto.php"> A Propaganda brasileira ainda é a melhor do mundo?</a></li>
                 <li><a href="/assets/pag/rappi.php">Como se cadastrar no Rappi</a></li>
                 <li><a href="/assets/pag/dadoenovobacon.php"> “O Dado é o novo Bacon!”: Tudo o que vimos no RIW 2024</a></li>
                 <li><a href="/assets/pag/noticia.php">Cadastro iFood: saiba como se inscrever na plataforma de delivery</a></li>
