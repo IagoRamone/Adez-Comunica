@@ -21,6 +21,18 @@
   --dark-nav-color: rgba(0, 0, 0, 0.905);
 }
 
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode h1 {
+  color: #ffffff;
+}
+
+body.dark-mode p {
+  color: #cccccc;
+}
 :root {
   --nav-color: rgba(255, 255, 255, 0.905);  
   --nav-hover-color: #ffc451;
@@ -34,11 +46,18 @@
 :root {
   scroll-behavior: smooth;
 }
+
  /* Reset básico de margens e preenchimento */
  * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.col-lg-4 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; 
 }
 
 body {
@@ -59,6 +78,10 @@ a:hover {
   color: color-mix(in srgb, var(--accent-color), transparent 25%);
   text-decoration: none;
 }
+a .linkcard{
+  text-decoration: none;
+  color: black;
+}
 
 h1,
 h3,
@@ -78,6 +101,12 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
 }
+
+section{
+  background-color: black;
+  border-color: red;
+}
+
 .header .logo {
   line-height: 1;
 }
@@ -111,51 +140,20 @@ h6 {
   background: #fdd028;
 }
 
-.principal{
-    
-    text-align: center;
+@media (min-width:1300px) and (max-width: 1400px) {
+  .services .card {
+    margin: 10px 20px;
+    margin-left: 20px;
+    width: 400px; 
+  }
+  #contato .container{
+    margin-left: 50px;
+  }
+  .section .card{
+    width: 350px;
+  }
+  
 }
-
-section {
-    width: 80%;
-    margin: 2rem auto;
-    padding: 1.5rem;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin-top: 0.5rem;
-    font-weight: bold;
-}
-
-input, select, textarea, button {
-    margin-top: 0.25rem;
-    padding: 0.5rem;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    font-size: 1rem;
-}
-
-button {
-    background-color: #0077cc;
-    color: #fff;
-    border: none;
-    margin-top: 1rem;
-    padding: 0.75rem;
-    cursor: pointer;
-    font-size: 1.1rem;
-}
-
-button:hover {
-    background-color: #005da3;
-}
-
 
 @media (min-width:1100px) and (max-width: 1200px) {
   .header .logo {
@@ -167,17 +165,8 @@ button:hover {
     margin: 0 15px 0 0;
     padding: 6px 15px;
 }
+}
 
-.header .navmenu {
-    order: 3;
-  }  
-}
-@media (min-width:1000px) and (max-width: 1100px){
-  .navmenu{
-    margin-left: 500px;
-  }
-  
-}
 
 .scrolled .header {
   box-shadow: 0px 0 18px color-mix(in srgb, var(--default-color), transparent 85%);
@@ -190,317 +179,77 @@ button:hover {
 .index-page.scrolled .header {
   --background-color: rgba(0, 0, 0, 0.8);
 }
-
-@media (min-width: 1200px) {
-  .navmenu {
-    padding: 0;
-    margin-left: 400px;
-    color: white;
-  }
-
-  .navmenu ul {
-    margin: 0;
-    text-decoration: none;
-    padding: 0;
-    display: flex;
-    list-style: none;
-    color: white;
-    align-items: center;
-  }
-
-  .navmenu li {
-    position: relative;
-    color: white;
-  }
-
-  .navmenu a,
-  .navmenu a:focus {
-    color: var(--nav-color);
-    padding: 18px 15px;
-    font-size: 16px;
-    font-family: var(--nav-font);
-    font-weight: 400;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    white-space: nowrap;
-    transition: 0.3s;
-  }
-
-  .navmenu a i,
-  .navmenu a:focus i {
-    font-size: 12px;
-    line-height: 0;
-    margin-left: 5px;
-    transition: 0.3s;
-  }
-
-  .navmenu li:last-child a {
-    padding-right: 0;
-  }
-
-  .navmenu li:hover>a,
-  .navmenu .active,
-  .navmenu .active:focus {
-    color: #fdd028;;
-  }
-
-  .navmenu .dropdown ul {
-    margin: 0;
-    padding: 10px 0;
-    background: var(--nav-dropdown-background-color);
-    display: block;
-    position: absolute;
-    visibility: hidden;
-    left: 14px;
-    top: 130%;
-    opacity: 0;
-    transition: 0.3s;
-    border-radius: 0;
-    z-index: 99;
-    box-shadow: 0px 0px 30px color-mix(in srgb, var(--default-color), transparent 85%);
-  }
-
-  .navmenu .dropdown ul li {
-    min-width: 200px;
-  }
-
-  .navmenu .dropdown ul a {
-    padding: 10px 20px;
-    font-size: 15px;
-    text-transform: none;
-    color: var(--nav-dropdown-color);
-  }
-
-  .navmenu .dropdown ul a i {
-    font-size: 12px;
-  }
-
-  .navmenu .dropdown ul a:hover,
-  .navmenu .dropdown ul .active:hover,
-  .navmenu .dropdown ul li:hover>a {
-    background-color: var(--nav-dropdown-hover-color);
-  }
-
-  .navmenu .dropdown:hover>ul {
-    opacity: 1;
-    top: 100%;
-    visibility: visible;
-  }
-
-  .navmenu .dropdown .dropdown ul {
-    top: 0;
-    left: -90%;
-    visibility: hidden;
-  }
-
-  .navmenu .dropdown .dropdown:hover>ul {
-    opacity: 1;
-    top: 0;
-    left: -100%;
-    visibility: visible;
-  }
-  .map{
-    width: 1200px;;.services h2{
-        font-size: 100px;
-        font-family: "Exo 2";
-        font-weight: 700;
-      }
-      
-      .section-title {
-        padding-bottom: 60px;
-        position: relative;
-      }
-      
-      .section-title h2 {
-        font-size: 14px;
-        font-weight: 500;
-        padding: 0;
-        line-height: 1px;
-        margin: 0;
-        letter-spacing: 1.5px;
-        text-transform: uppercase;
-        color: color-mix(in srgb, var(--default-color), transparent 50%);
-        position: relative;
-      }
-      
-      .section-title h2::after {
-        content: "";
-        width: 120px;
-        height: 1px;
-        display: inline-block;
-        background: var(--accent-color);
-        margin: 4px 10px;
-      }
-      
-      .section-title p {
-        color: var(--heading-color);
-        margin: 0;
-        font-size: 36px;
-        font-weight: 700;
-        text-transform: uppercase;
-      }
-    height:250px;
+@media (min-width: 1050px) {
+  video{
+    width: 520px;
   }
   
 }
 
-@media (max-width: 1199px) {
-  .mobile-nav-toggle {
-    color: var(--nav-color);
-    font-size: 28px;
-    line-height: 0;
-    margin-right: 10px;
-    cursor: pointer;
-    transition: color 0.3s;
-  }
 
-  .navmenu {
-    padding: 0;
-    z-index: 9997;
-    margin-left: 100px;
-  }
 
-  .navmenu ul {
-    display: none;
-    position: absolute;
-    inset: 60px 20px 20px 20px;
-    padding: 10px 0;
-    margin: 0;
-    border-radius: 6px;
-    background-color: var(--nav-dropdown-background-color);
-    overflow-y: auto;
-    transition: 0.3s;
-    z-index: 9998;
-    box-shadow: 0px 0px 30px color-mix(in srgb, var(--default-color), transparent 90%);}
-    
-  .navmenu a,
-  .navmenu a:focus {
-    color: var(--nav-dropdown-color);
-    padding: 10px 20px;
-    font-family: var(--nav-font);
-    font-size: 17px;
-    font-weight: 500;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    white-space: nowrap;
-    transition: 0.3s;
-  }
-
-  .navmenu a i,
-  .navmenu a:focus i {
-    font-size: 12px;
-    line-height: 0;
-    margin-left: 5px;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    transition: 0.3s;
-    background-color: color-mix(in srgb, var(--accent-color), white 90%);
-  }
-
-  .navmenu a i:hover,
-  .navmenu a:focus i:hover {
-    background-color: color-mix(in srgb, var(--accent-color), white 90%);
-  }
-
-  .navmenu a:hover,
-  .navmenu .active,
-  .navmenu .active:focus {
-    background-color: var(--nav-dropdown-hover-color);
-  }
-
-  .navmenu .active i,
-  .navmenu .active:focus i {
-    transform: rotate(180deg);
-  }
   .map{
     width: 950px;;
     height:250px;
   }
 
-  .navmenu .dropdown ul {
-    position: static;
-    display: none;
-    z-index: 99;
-    padding: 10px 0;
-    margin: 10px 20px;
-    background-color: var(--nav-dropdown-background-color);
-    border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-    box-shadow: none;
-    transition: all 0.5s ease-in-out;
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
   }
 
-  .navmenu .dropdown ul ul {
-    background-color: rgba(33, 37, 41, 0.1);
+  100% {
+    transform: rotate(360deg);
   }
+}
 
-  .navmenu .dropdown>.dropdown-active {
-    display: block;
-    background-color: rgba(33, 37, 41, 0.03);
-  }
+section {
+    padding: 20px 0;
+}
 
-  .mobile-nav-active {
-    overflow: hidden;
-  }
 
-  .mobile-nav-active .mobile-nav-toggle {
-    color: #fff;
-    position: absolute;
-    font-size: 32px;
-    top: 15px;
-    right: 15px;
-    margin-right: 0;
-    z-index: 9999;
-  }
 
-  .mobile-nav-active .navmenu {
-    position: fixed;
-    overflow: hidden;
-    inset: 0;
-    background: rgba(33, 37, 41, 0.8);
-    transition: 0.3s;
-  }
 
-  .mobile-nav-active .navmenu>ul {
-    display: block;
-  }
-  .navmenu .btn-getstarted{
-    position: absolute;
-    padding: 10px 0;
-    margin: 0;
-    background-color: #ffffff;
-    overflow-y: auto;
-    transition: 0.3s;
-    color: var(--nav-dropdown-color);
-    padding: 10px 20px;
-    font-family: var(--nav-font);
-    font-size: 17px;
-    border: none;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    white-space: nowrap;
-    transition: 0.3s;
-    z-index: 9998;
-    box-shadow: 0px 0px 30px color-mix(in srgb, var(--default-color), transparent 90%);}
-   }
-  
 @media (max-width: 1199px) {
+  .btn-call,
+  .btn-call:focus {
+    width: 800px;
+    color: #fdd028;
+    font-size: 40px;
+    padding: 8px 30px;
+    margin-left: 350px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
 
   section,
   .section {
     scroll-margin-top: 58px;
   }
 }
+.services h2{
+  font-size: 100px;
+  font-family: "Exo 2";
+  font-weight: 700;
+}
 
+.section-title {
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.section-title h2 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  position: relative;
+}
 
 @media ((min-width: 800px) and (max-width:990px)){
   #map{
@@ -509,7 +258,6 @@ button:hover {
     margin-top: 20px;
   }
 }
-
 
 @media ((min-width: 768px) and (max-width:800px)){
   #map{
@@ -535,7 +283,6 @@ button:hover {
     height: 250px;
     margin-top: 20px;
   }
- 
 }
 
 @media ((min-width:400px) and (max-width: 500px)){
@@ -544,22 +291,27 @@ button:hover {
     height: 250px;
     margin-top: 40px;
   }
-
 }
 
-  /*Responsividade para celular*/
-@media (min-width: 300px) and (max-width: 400px) {
+@media ((min-width:300px) and (max-width: 400px)){
+
   #map{
-      width: 400px;
-      height: 250px;
-      margin-top: 40px;
-    }
+    width: 500px;
+    height: 250px;
+    margin-top: 40px;
   }
 
+}
 
 
 p {
   font-size: 14px;
+}
+
+.logos img {
+  width: 50px;
+  height: auto;
+  margin: 5px;
 }
 
 
@@ -669,7 +421,6 @@ p {
 .footer .footer-contact p {
   margin-bottom: 5px;
 }
-
 .footer .copyright {
   padding: 20px 0;
   color: black;
