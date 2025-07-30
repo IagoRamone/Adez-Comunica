@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Adez Comunicação - marketing e consultoria para delivery</title>
-  <link href="../img/Foguete amarelo.png" rel="icon" type="image/png">
+  <link href="../img/foguete_amarelo.png" rel="icon" type="image/png">
   <link href="../img/apple-touch-icon.png" rel="apple-touch-icon">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -14,38 +14,81 @@
   <link href="../css/trabalheconosco.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
+ <style>
+    #trabalhe-intro {
+  background-color: black;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+#trabalhe-intro h2 {
+  font-size: 36px;
+}
+
+#trabalhe-intro p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+  </style>
+
 </head>
 <body class="index-page">
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-      <a href="/Adez/index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+      <a href="/index.html" class="logo d-flex align-items-center me-auto me-lg-0">
         <img src="../img/2.png" alt="logo-png">
       </a>
     </div>
   </header>
 <br><br>
+<br><br>
+
+<section id="trabalhe-intro" class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Texto à esquerda -->
+      <div class="col-md-6" data-aos="fade-right">
+        <h2 style="color: var(--accent-color); font-family: var(--heading-font); font-weight: 700;">Faça parte do time da Adez</h2>
+        <p style="color: white; font-family: 'Poppins';">
+          Somos apaixonados por criatividade e estratégia. Buscamos talentos que queiram transformar ideias em resultados.
+          <br><br>
+          Se você compartilha esse propósito, queremos te conhecer!
+        </p>
+      </div>
+
+      <!-- Logo à direita -->
+      <div class="col-md-6 text-center" data-aos="fade-left">
+        <img src="../img/foguete_amarelo.png" alt="Logo Trabalhe Conosco" class="img-fluid" style="max-width: 250px;">
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <section id="trabalhe-conosco" class="py-5">
     <div class="container">
     <div class="form-box bg-white p-5 shadow rounded">
-      <h2 class="text-center mb-4" style="color: var(--accent-color); font-family: var(--heading-font);">Trabalhe Conosco</h2>
-      <p class="text-center mb-5" style="color: var(--default-color); font-family: 'Poppins';">Estamos sempre em busca de talentos para fazer parte do nosso time. Preencha o formulário abaixo:</p>
+      <h2 class="text-center mb-4" style="color: var(--accent-color); font-family: var(--heading-font); font-size: 60px;">Trabalhe Conosco</h2>
+      <p class="text-center mb-5" style="color: var(--default-color); font-family: 'Poppins';font-size: 15px;">Estamos sempre em busca de talentos para fazer parte do nosso time. Preencha o formulário abaixo:</p>
       
-      <form id="form-trabalhe-conosco" class="row g-3">
+      <form id="form-trabalhe-conosco" class="row g-3" method="POST" enctype="multipart/form-data">
         <div class="col-md-6">
           <label for="nome" class="form-label">Nome completo</label>
-          <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+          <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome" required>
         </div>
         <div class="col-md-6">
           <label for="email" class="form-label">E-mail</label>
-          <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" required>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail" required>
         </div>
         <div class="col-md-6">
           <label for="telefone" class="form-label">Telefone</label>
-          <input type="tel" class="form-control" id="telefone" placeholder="(00) 00000-0000" required>
+          <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
         </div>
         <div class="col-md-6">
           <label for="area-interesse" class="form-label">Área de Interesse</label>
-          <select class="form-select" id="area-interesse" required>
+          <select class="form-select" id="area-interesse" name="area-interesse" required>
             <option selected disabled>Escolha uma opção</option>
             <option>Design</option>
             <option>Social Media</option>
@@ -57,8 +100,13 @@
         </div>
         <div class="col-12">
           <label for="mensagem" class="form-label">Mensagem</label>
-          <textarea class="form-control" id="mensagem" rows="5" placeholder="Fale um pouco sobre você..." required></textarea>
+          <textarea class="form-control" id="mensagem" name="mensagem" rows="5" placeholder="Fale um pouco sobre você..." required></textarea>
         </div>
+        <div class="col-md-12">
+          <label for="curriculo" class="form-label">Anexe seu currículo (PDF ou Word)</label>
+          <input type="file" class="form-control" id="curriculo" name="curriculo" accept=".pdf,.doc,.docx" required>
+        </div>
+
         <div class="col-12 text-center">
           <button type="submit" class="btn btn-warning px-5 py-2 mt-3" style="background-color: #fdd028; border: none;">Enviar</button>
         </div>
@@ -109,6 +157,7 @@
     </div>
   </footer>
 
+
   <!-- JS Arquivos -->
   <script src="../vendor/aos/aos.js"></script>
   <script src="../vendor/swiper/swiper-bundle.min.js"></script>
@@ -116,12 +165,53 @@
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.8/inputmask.min.js"></script>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const telInput = document.getElementById("telefone");
+    if (telInput) {
+      Inputmask({"mask": "(99) 99999-9999"}).mask(telInput);
+    }
+
+    const form = document.getElementById("form-trabalhe-conosco");
+    if (form) {
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+
+        fetch("/assets/pag/enviar_formulario.php", {
+          method: "POST",
+          body: formData
+        })
+        .then(response => response.text())
+        .then(data => {
+          if (data.trim() === "success") {
+            alert("Mensagem enviada com sucesso!");
+            form.reset();
+          } else {
+            alert("Erro ao enviar. Tente novamente.");
+          }
+        })
+        .catch(() => {
+          alert("Erro inesperado. Tente novamente.");
+        });
+      });
+    }
+  });
+</script>
+
 
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZQLT2P"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
+
+
+
+</script>
+
 </body>
 
 </html>
