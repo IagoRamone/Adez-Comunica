@@ -822,6 +822,7 @@ section,
 .section-title {
   padding-bottom: 60px;
   position: relative;
+  text-align: center;
 }
 
 .section-title h2 {
