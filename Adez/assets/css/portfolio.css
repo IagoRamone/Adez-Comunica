@@ -502,3 +502,10 @@ p {
   color: #fdd028;
   cursor:context-menu;
 }
+#adez-rodape{
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-family: 'Poppin';
+  font-size: 18px;
+}
