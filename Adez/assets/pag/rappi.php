@@ -200,7 +200,7 @@ Hoje, o Rappi conta com mais de quatrocentos mil entregadores espalhados pelo Br
     <footer class="footer">
       <div class="copyright-noticia">
         <div class="container text-center">
-          <p>©<span>Copyright 2025</span> <strong class="px-1 sitename">adezcomunicação</strong> <span>Todos os direitos reservados - produzido por <a href="/index.html" id="adez-rodape">Adez</a></span></p>
+          <p>©<span>Copyright 2025</span> <strong class="px-1 sitename">adezcomunicação</strong> <span>Todos os direitos reservados - produzido por <a href="/index.html" id="adez-rodape"><img src="/assets/img/icones/adezfooter.png" style="width: 50px; margin-bottom: 5px;" alt="Adez Logo"></a></span></p>
         </div>
       </div>
     </footer>
