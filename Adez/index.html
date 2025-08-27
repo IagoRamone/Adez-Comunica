@@ -17,7 +17,7 @@
   <link rel="canonical" href="https://adezcomunica.com/index.html#principal-">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> 
   <style>
-    #adez-rodape{
+  #adez-rodape{
   text-decoration: none;
   color: black;
   font-weight: 500;
@@ -28,6 +28,13 @@
   padding-bottom: 60px;
   position: relative;
   text-align: center;
+}
+
+.footer-badges .row {
+  gap: 4px !important; /* controla o espaçamento horizontal e vertical entre colunas */
+}
+.footer-badges .badge-item {
+  gap: 4px; /* diminui o espaço entre imagem e legenda */
 }
   </style>
 
@@ -366,47 +373,82 @@
   </main>
 
   <footer class="footer">
-    <div class="footer-top">
-      <div class="container d-flex flex-wrap justify-content-between align-items-start">
-        <!-- Seção Principal do Footer -->
-        <div class="footer-about col-lg-6 col-md-12">
-            <h1 class="sitenameh">Adez Comunicação</h1>
-          <div class="footer-contact pt-3">
-            <p>Av. José da Silva de Azevedo Neto 200</p>
-            <p>117, Rio de Janeiro, RJ, Rio de Janeiro BR</p>
-            <p class="mt-3"><strong>Telefone:</strong> <span>+55 (21)96857-9070</span></p>
-            <p><strong>Email:</strong> <span>atendimento@adezcomunica.com</span></p>
-            <p><a href="./assets/pag/trabalheconosco.html">Trabalhe Conosco</a></p>
-          </div>
-          <div class="social-links d-flex mt-4">
-            <a href="https://www.behance.net/adezcomunica" target="_blank"><i class="bi bi-behance"></i></a>
-            <a href="https://www.instagram.com/adezcomunica/" target="_blank"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.linkedin.com/search/results/all/?heroEntityKey=urn%3Ali%3Aorganization%3A81461872&keywords=ADEZ&origin=ENTITY_SEARCH_HOME_HISTORY&sid=cMw" target="_blank"><i class="bi bi-linkedin"></i></a>
-          </div>
+  <div class="footer-top">
+    <div class="container d-flex flex-wrap justify-content-between align-items-start">
+      
+      <!-- SOBRE / CONTATO -->
+      <div class="footer-about col-lg-6 col-md-12">
+        <h1 class="sitenameh">Adez Comunicação</h1>
+        <div class="footer-contact pt-3">
+          <p>Av. José da Silva de Azevedo Neto 200</p>
+          <p>117, Rio de Janeiro, RJ, Rio de Janeiro BR</p>
+          <p class="mt-3"><strong>Telefone:</strong> <span>+55 (21)96857-9070</span></p>
+          <p><strong>Email:</strong> <span>atendimento@adezcomunica.com</span></p>
+          <p><a href="./assets/pag/trabalheconosco.html">Trabalhe Conosco</a></p>
         </div>
-  
-        <!-- Mapa -->
-        <div id="map" class="footer-map col-lg-6 col-md-12">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.7890607789664!2d-43.36871782796311!3d-22.994783010463618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bda3035c9dc45%3A0xcdceefdc21baae1!2sAv.%20Jos%C3%A9%20Silva%20de%20Azevedo%20Neto%2C%20200%20-%20Bloco%205%20sala%20117%20-%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022775-056!5e0!3m2!1spt-PT!2sbr!4v1725288118205!5m2!1spt-PT!2sbr" 
-            width="100%"
-            height="250"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            aria-label="Localização de Av. José da Silva de Azevedo Neto 200, 117, Rio de Janeiro, RJ"
-          ></iframe>
+        <div class="social-links d-flex mt-4">
+          <a href="https://www.behance.net/adezcomunica" target="_blank" aria-label="Behance"><i class="bi bi-behance"></i></a>
+          <a href="https://www.instagram.com/adezcomunica/" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.linkedin.com/search/results/all/?heroEntityKey=urn%3Ali%3Aorganization%3A81461872&keywords=ADEZ&origin=ENTITY_SEARCH_HOME_HISTORY&sid=cMw" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
         </div>
       </div>
-    </div>
-  
-    <div class="copyright">
-      <div class="container text-center">
-        <p>©<span>Copyright 2025</span> <strong class="px-1 sitename">adezcomunicação</strong> <span>Todos os direitos reservados - produzido por <a href="/index.html" id="adez-rodape"><img src="./assets/img/icones/adezfooter.png" style="width: 50px; margin-bottom: 5px;" alt="Adez Logo"></a></span></p>
+
+      <!-- MAPA -->
+      <div id="map" class="footer-map col-lg-6 col-md-12">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.7890607789664!2d-43.36871782796311!3d-22.994783010463618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bda3035c9dc45%3A0xcdceefdc21baae1!2sAv.%20Jos%C3%A9%20Silva%20de%20Azevedo%20Neto%2C%20200%20-%20Bloco%205%20sala%20117%20-%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022775-056!5e0!3m2!1spt-PT!2sbr!4v1725288118205!5m2!1spt-PT!2sbr"
+          width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          aria-label="Localização de Av. José da Silva de Azevedo Neto 200, 117, Rio de Janeiro, RJ">
+        </iframe>
       </div>
     </div>
-  </footer>
+  </div>
+
+  <!-- SELOS -->
+  <div class="footer-badges">
+    <div class="container">
+      <div class="row g-0 align-items-center justify-content-start text-start">
+        <!-- Selo 1 -->
+        <div class="col-6 col-sm-4 col-md-2">
+          <a rel="noopener" class="badge-item" aria-label="Selo Parceiro 1">
+            <img src="/Adez/assets/img/selo/selo_amiga.png" 
+                alt="Empresa amiga" 
+                loading="lazy" 
+                class="selo-menor">
+          </a>
+        </div>
+        <!-- Selo 2 -->
+        <div class="col-6 col-sm-4 col-md-2">
+          <a rel="noopener" class="badge-item" aria-label="Selo Parceiro 2">
+            <img src="/Adez/assets/img/selo/google_partner.png" alt="Selo Parceiro 2" loading="lazy" class="selo-menor2">
+          </a>
+        </div>
+        <!-- Selo 3 -->
+        <div class="col-6 col-sm-4 col-md-2">
+          <a rel="noopener" class="badge-item" aria-label="Selo Parceiro 3">
+            <img src="/Adez/assets/img/selo/govbr.png" alt="Selo Parceiro 3" loading="lazy" class="selo-menor3">
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- COPYRIGHT -->
+  <div class="copyright">
+    <div class="container text-center">
+      <p>©<span>Copyright 2025</span> <strong class="px-1 sitename">adezcomunicação</strong> 
+        <span>Todos os direitos reservados - produzido por 
+          <a href="/index.html" id="adez-rodape">
+            <img src="./assets/img/icones/adezfooter.png" style="width: 50px; margin-bottom: 5px;" alt="Adez Logo">
+          </a>
+        </span>
+      </p>
+    </div>
+  </div>
+</footer>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
